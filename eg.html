@@ -1,0 +1,107 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <title>Quarterly Earnings Report</title>
+
+    <link rel="stylesheet" href="dist/reset.css">
+    <link rel="stylesheet" href="dist/reveal.css">
+    <link rel="stylesheet" href="dist/theme/black.css">
+
+    <link rel="stylesheet" href="plugin/highlight/monokai.css">
+</head>
+<body>
+    <div class="reveal">
+        <div class="slides">
+            <section>
+                <h2>Quarterly Earnings Report</h2>
+                <p>Presented by `23/3000971@ds.study.iitm.ac.in`</p>
+                <aside class="notes">
+                    This is the introductory slide. We'll start by introducing the purpose of the report.
+                </aside>
+            </section>
+
+            <section data-markdown>
+                <script type="text/template">
+                    ### Q3 Performance Summary
+                    
+                    The following metrics show our strong growth:
+                    
+                    * **Revenue:** Up 10% from last quarter.
+                    * **Operating Costs:** Reduced by 5%.
+                    
+                    ---
+                    
+                    | Metric        | Value      |
+                    |---------------|------------|
+                    | Net Profit    | $15 Million |
+                    | Customer Base | 1.2 Million |
+                </script>
+                <aside class="notes">
+                    This slide, written in Markdown, provides a quick, scannable overview of our key financial metrics.
+                </aside>
+            </section>
+
+            <section>
+                <h3>Our Strategic Pillars</h3>
+                <ul>
+                    <li class="fragment fade-in">Innovation in Financial Technology</li>
+                    <li class="fragment fade-in">Global Market Expansion</li>
+                    <li class="fragment fade-in">Enhanced Client Support</li>
+                </ul>
+                <aside class="notes">
+                    Use these bullet points to discuss our three main strategic goals, revealing them one by one.
+                </aside>
+            </section>
+
+            <section>
+                <h3>Calculating Simple Interest</h3>
+                <pre><code class="language-python" data-trim>
+                    def calculate_interest(principal, rate, time):
+                        """Calculates simple interest."""
+                        interest = principal * rate * time
+                        return interest
+
+                    # Example usage:
+                    principal = 1000
+                    rate = 0.05
+                    time = 2
+                    simple_interest = calculate_interest(principal, rate, time)
+                    print(f"Simple Interest: {simple_interest}")
+                </code></pre>
+                <aside class="notes">
+                    This slide demonstrates a simple function for calculating interest, showcasing the syntax highlighting feature.
+                </aside>
+            </section>
+
+            <section>
+                <h3>Return on Investment (ROI)</h3>
+                <p>The ROI formula is a key financial metric:</p>
+                <p>$$ROI = \frac{(Net\ Profit - Total\ Investment)}{Total\ Investment} \times 100$$</p>
+                <p>Where:</p>
+                <ul>
+                    <li>$Net\ Profit$ = The gain from an investment</li>
+                    <li>$Total\ Investment$ = The cost of the investment</li>
+                </ul>
+                <aside class="notes">
+                    Explain the ROI formula and why it's a crucial metric for evaluating investment performance.
+                </aside>
+            </section>
+        </div>
+    </div>
+
+    <script src="dist/reveal.js"></script>
+    <script src="plugin/notes/notes.js"></script>
+    <script src="plugin/markdown/markdown.js"></script>
+    <script src="plugin/highlight/highlight.js"></script>
+    <script src="plugin/math/math.js"></script>
+    <script>
+        Reveal.initialize({
+            hash: true,
+            plugins: [ RevealMarkdown, RevealHighlight, RevealNotes, RevealMath.KaTeX ]
+        });
+    </script>
+</body>
+</html>
